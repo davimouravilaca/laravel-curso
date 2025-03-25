@@ -1,4 +1,12 @@
-<h1> Hello World </h1>
+ @extends('layouts.main')
+
+ @section('title', 'DMLV Events')
+
+ @section('content')
+
+    <h1> Hello World </h1>
+
+    <img src="/img/bg.jpg" alt="">
 
 
 <p>O nome é {{ $nome }} e ele tem {{ $idade }} anos e trabalha como {{ $profissao }} </p>
@@ -11,7 +19,7 @@
 <p>O nome nao e Pedro</p>
 @endif
 
-@for($i = 0; $i < count($arr); $i++)
+@for ($i = 0; $i < count($arr); $i++)
     <p> {{ $arr[$i] }} - {{ $i }} </p>
     @if($i == 2) 
     <p>i é 2</p> 
@@ -29,4 +37,6 @@
 @endphp
 
 {{-- Este é um comentário do blade --}}
+
+@endsection('content')
 
