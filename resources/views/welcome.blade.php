@@ -6,9 +6,9 @@
 
     <h1> Hello World </h1>
 
-    <img src="/img/bg.jpg" alt="">
+    <img src="/img/bg.jpg" alt="" style="max-width: 200px;">
 
-
+''
 <p>O nome é {{ $nome }} e ele tem {{ $idade }} anos e trabalha como {{ $profissao }} </p>
 
 @if ($nome == "Pedro")
